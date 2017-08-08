@@ -1,9 +1,12 @@
 basics:
-	bash install_basics.sh
+	sudo bash install_basics.sh
 
 docker:
-	bash install_docker.sh
+	sudo bash install_docker.sh
+
+sublime:
+	sudo bash install_sublime.sh
 
 jeeves: basics docker
 
-all: basics docker
+all: basics sublime docker
